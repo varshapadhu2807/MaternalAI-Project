@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maternal AI Voice Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">🤱 Maternal AI Voice Assistant</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Smart Healthcare Support for Mothers</h1>
+        <p>
+            AI-powered voice assistant designed to provide maternal health guidance,
+            appointment reminders, and emergency support.
+        </p>
+        <button id="startBtn">Get Started</button>
+    </section>
+
+    <section id="features">
+        <h2>Key Features</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>🎤 Voice Interaction</h3>
+                <p>Communicate naturally using voice commands.</p>
+            </div>
+
+            <div class="card">
+                <h3>❤️ Health Monitoring</h3>
+                <p>Track important maternal health information.</p>
+            </div>
+
+            <div class="card">
+                <h3>🚨 Emergency Alerts</h3>
+                <p>Quick support during critical situations.</p>
+            </div>
+
+            <div class="card">
+                <h3>📅 Appointment Reminders</h3>
+                <p>Never miss important medical appointments.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Project</h2>
+        <p>
+            Maternal AI Voice Assistant is an intelligent healthcare support system
+            designed to assist pregnant women and new mothers. The platform offers
+            voice-based interaction, health guidance, appointment reminders, and
+            emergency assistance to improve maternal healthcare accessibility.
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: maternalai@gmail.com</p>
+        <p>Phone: +91 XXXXX XXXXX</p>
+    </section>
+    <section id="dashboard">
+    <h2>Dashboard</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Total Users</h3>
+            <p id="totalUsers">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Appointments</h3>
+            <p>10</p>
+        </div>
+
+        <div class="card">
+            <h3>Emergency Alerts</h3>
+            <p>2</p>
+        </div>
+
+    </div>
+</section>
+    <center>
+        <section id="register">
+    <h2>Register User</h2>
+    
+
+    <input type="text" id="name" placeholder="Enter Name"><br>
+    <input type="email" id="email" placeholder="Enter Email"><br>
+    <input type="password" id="password" placeholder="Enter Password"><br>
+
+    <button id="registerBtn">Register</button>
+    <button onclick="startVoice()">🎤 Speak</button>
+   </section>
+    </center>
+    <center>
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search User..."
+            onkeyup="searchUsers()"
+        />
+    </center>
+    <section id="users">
+        <h2>User List</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Action</th>
+            </tr>
+                
+            </thead>
+            <tbody id="userTable"></tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>© 2026 Maternal AI Voice Assistant. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <div id="toast" class="toast"></div>
+</body>
+</html>
